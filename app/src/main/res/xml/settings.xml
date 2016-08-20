@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_alarm_title"
+        android:key="alarm_settings">
+        <SwitchPreference
+            android:key="alarm_set"
+            android:title="@string/pref_alarm_enable"
+            android:defaultValue="false" />
+        <MultiSelectListPreference
+            android:dialogTitle="@string/pref_alarm_days"
+            android:key="days"
+            android:summary="@string/pref_alarm_days_summary"
+            android:title="@string/pref_alarm_days"
+            android:entries="@array/weekdays"
+            android:entryValues="@array/weekdays_values"
+            android:defaultValue="@array/empty_array"
+            />
+        <audio.bandwagon.bandwagon.settings.TimePreference
+            android:key="time"
+            android:title="@string/pref_alarm_time"/>
+    </PreferenceCategory>
+</PreferenceScreen>
