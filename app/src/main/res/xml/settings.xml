@@ -16,8 +16,20 @@
             android:entryValues="@array/weekdays_values"
             android:defaultValue="@array/empty_array"
             />
-        <audio.bandwagon.bandwagon.settings.TimePreference
+        <com.curlymo.bandwagon.settings.TimePreference
             android:key="time"
             android:title="@string/pref_alarm_time"/>
+        <VolumePreference
+            android:name="Volume"
+            android:summary="@string/volume_summary"
+            android:title="@string/volume_title"
+            android:key="volume"/>
+        <com.curlymo.bandwagon.settings.NumberPickerPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/fade_rate_dialog"
+            android:inputType="number"
+            android:key="fade_rate"
+            android:summary="@string/fade_rate_summary"
+            android:title="@string/fade_rate_title" />
     </PreferenceCategory>
 </PreferenceScreen>

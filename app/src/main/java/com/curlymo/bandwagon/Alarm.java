@@ -1,4 +1,4 @@
-package audio.bandwagon.bandwagon;
+package com.curlymo.bandwagon;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

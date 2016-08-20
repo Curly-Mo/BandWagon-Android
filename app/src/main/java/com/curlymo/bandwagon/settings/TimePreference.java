@@ -1,4 +1,4 @@
-package audio.bandwagon.bandwagon.settings;
+package com.curlymo.bandwagon.settings;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import audio.bandwagon.bandwagon.R;
+import com.curlymo.bandwagon.R;
 
 public class TimePreference extends DialogPreference {
     private Calendar calendar;

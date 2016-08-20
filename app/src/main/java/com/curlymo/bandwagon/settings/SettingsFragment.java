@@ -1,9 +1,9 @@
-package audio.bandwagon.bandwagon.settings;
+package com.curlymo.bandwagon.settings;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-import audio.bandwagon.bandwagon.R;
+import com.curlymo.bandwagon.R;
 
 public class SettingsFragment extends PreferenceFragment {
     @Override

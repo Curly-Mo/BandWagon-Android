@@ -1,4 +1,4 @@
-package audio.bandwagon.bandwagon;
+package com.curlymo.bandwagon;
 
 import android.content.Intent;
 import android.os.Build;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import audio.bandwagon.bandwagon.settings.SettingsActivity;
+import com.curlymo.bandwagon.settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.xml.menu, menu);
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
 

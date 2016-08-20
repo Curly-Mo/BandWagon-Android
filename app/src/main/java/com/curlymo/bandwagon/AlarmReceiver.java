@@ -1,4 +1,4 @@
-package audio.bandwagon.bandwagon;
+package com.curlymo.bandwagon;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Set;
 import java.util.TimeZone;
@@ -36,6 +35,10 @@ public class AlarmReceiver extends BroadcastReceiver {
                 Intent mainIntent = new Intent(context, MainActivity.class);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(mainIntent);
+
+                Intent alarmService = new Intent(context, AlarmService.class);
+                context.startService(alarmService);
+
 
                 this.resetAlarm(context);
             }

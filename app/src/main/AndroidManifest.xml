@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="audio.bandwagon.bandwagon">
+    package="com.curlymo.bandwagon">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.curlymo.bandwagon.MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,18 +19,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".settings.SettingsActivity"
+        <activity android:name="com.curlymo.bandwagon.settings.SettingsActivity"
             android:theme="@android:style/Theme.Material">
         </activity>
 
-        <service android:name=".AlarmService">
+        <service android:name="com.curlymo.bandwagon.AlarmService"
+            android:enabled="true" >
         </service>
 
-        <receiver android:name=".AlarmReceiver"
+        <receiver android:name="com.curlymo.bandwagon.AlarmReceiver"
             android:enabled="true">
         </receiver>
 
-        <receiver android:name=".BootReceiver"
+        <receiver android:name="com.curlymo.bandwagon.BootReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>

@@ -1,4 +1,4 @@
-package audio.bandwagon.bandwagon;
+package com.curlymo.bandwagon;
 
 import org.junit.Test;
 

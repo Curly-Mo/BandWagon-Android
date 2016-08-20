@@ -27,6 +27,13 @@
     </string-array>
     <string-array name="empty_array"></string-array>
 
+    <string name="volume_title">Alarm Volume</string>
+    <string name="volume_summary">Alarm Volume</string>
+    <string name="fade_rate_title">Fade-in Rate</string>
+    <string name="fade_rate_dialog">Time (in minutes) to reach max volume</string>
+    <string name="fade_rate_summary">Time to reach max volume</string>
+
+
     <string name="settings">Settings</string>
     <string name="quit">Quit</string>
 
